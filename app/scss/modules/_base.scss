@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    font-family: 'Nunito' sans-serif;
+    font-weight: 400;
+    color: $text;
+    overflow-x: hidden;
+    height: 10000px;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: $secondary;
+    outline: 1px solid #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

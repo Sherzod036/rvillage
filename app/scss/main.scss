@@ -1,0 +1,22 @@
+$primary: #1e82bd;
+$secondary: #fee34c;
+$text: #333;
+$white: #fff;
+@import 'modules/typography';
+@import 'modules/base';
+@import 'modules/cursor';
+@import 'modules/wrapper';
+@import 'modules/logo';
+@import 'modules/burger';
+@import 'modules/subscribe';
+@import 'modules/buttons';
+@import 'modules/menu';
+@import 'modules/header';
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+@import 'modules/footer';
+@import 'modules/media';

@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__burger span {
+        background: $white;
+    }
+}
