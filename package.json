@@ -22,6 +22,7 @@
         "normalize.css": "^8.0.1"
     },
     "dependencies": {
+        "gsap": "^3.5.1",
         "slick-carousel": "^1.8.1"
     }
 }

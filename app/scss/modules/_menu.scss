@@ -1,21 +1,78 @@
 .menu {
+    margin-top: -100%;
+    opacity: 0;
     position: fixed;
     z-index: 98;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(30, 130, 189, 0.6), rgba(30, 130, 189, 0.6));
+    background-position: center !important;
+    background-size: cover !important;
+    &__wrapper {
+        position: relative;
+        height: 100vh;
+    }
+    &__grad {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background: linear-gradient(0deg, rgba(30, 130, 189, 0.6), rgba(30, 130, 189, 0.6));
+    }
+    &__contact {
+        position: relative;
+        z-index: 2;
+        &-items {
+            display: flex;
+            padding-top: 120px;
+        }
+        &-item:not(:last-child) {
+            margin-right: 100px;
+        }
+        &-title {
+            font-family: "Alice";
+            font-weight: 400;
+            color: $white;
+            display: block;
+            margin-bottom: 10px;
+        }
+        &-link {
+            display: block;
+            font-size: 16px;
+            color: $white;
+            line-height: 150%;
+        }
+    }
+    &__subscribe {
+        position: absolute;
+        bottom: 15%;
+        &-title {
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+            color: $white;
+            margin-bottom: 25px;
+        }
+        &-icos {
+            display: flex;
+            align-items: center;
+        }
+        &-ico:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
 }
 
 .navs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
     height: 100vh;
     position: absolute;
+    top: 0;
     right: 0;
+    z-index: 3;
     background: linear-gradient(90deg, #1e82bd 0%, #10527b 100%);
     padding: 0 50px;
+    padding-top: 120px;
     &__close-ico {
         position: absolute;
         top: 5%;

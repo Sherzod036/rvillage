@@ -7,11 +7,17 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: $secondary;
+    color: $white;
+}
+
 html,
 body {
     position: relative;
-    font-family: 'Nunito' sans-serif;
+    font-family: 'Nunito';
     font-weight: 400;
+    font-size: 20px;
     color: $text;
     overflow-x: hidden;
     height: 10000px;
@@ -35,6 +41,32 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 78px;
+    background: linear-gradient(270deg, #1e82bd 26%, #10527b 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 40px;
 }
 
 input {
