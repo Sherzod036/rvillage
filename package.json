@@ -23,6 +23,8 @@
     },
     "dependencies": {
         "gsap": "^3.5.1",
-        "slick-carousel": "^1.8.1"
+        "scrollmagic": "^2.0.7",
+        "slick-carousel": "^1.8.1",
+        "vanilla-lazyload": "^17.1.3"
     }
 }

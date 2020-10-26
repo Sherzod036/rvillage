@@ -47,9 +47,10 @@ gulp.task('bundlecss', function() {
 gulp.task('bundlejs', function() {
 
     return gulp.src([
-        'node_modules/jquery/dist/jquery.js',
         'node_modules/gsap/dist/gsap.js',
-        'node_modules/jquery-lazyload/jquery.lazyload.js',
+        'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+        'node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
+        'node_modules/vanilla-lazyload/dist/lazyload.js',
         'node_modules/slick-carousel/slick/slick.js'
     ])
 

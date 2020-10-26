@@ -1,0 +1,30 @@
+.footer {
+    width: 100%;
+    &__wrapper {
+        display: flex;
+    }
+    &__item {
+        width: 25%;
+    }
+    &__nav {
+        & ul {
+            & li {
+                margin-bottom: 5px;
+                text-align: center;
+                line-height: 165%;
+            }
+        }
+    }
+    &__pic {
+        width: 100%;
+        & img {
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
+
+.view-map {
+    color: $primary;
+    text-decoration: underline;
+}

@@ -58,8 +58,20 @@
             display: flex;
             align-items: center;
         }
+        &-ico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            transition: .3s;
+            &:hover {
+                background: $secondary;
+            }
+        }
         &-ico:not(:last-child) {
-            margin-right: 25px;
+            margin-right: 8px;
         }
     }
 }

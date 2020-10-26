@@ -6,6 +6,10 @@ document.addEventListener('mousemove', function(e) {
     cursor.style.top = `${y}px`;
 });
 
+const lazy = new LazyLoad();
+
+// GSAP
+
 let menu = document.querySelector('.menu');
 let navs = document.querySelector('.navs');
 let navLinks = document.querySelectorAll('.nav ul li')
@@ -37,6 +41,39 @@ navsClose.addEventListener('click', function() {
 });
 
 
+// ScrollMagic
+
+let weekendTitle = document.querySelector('.weekend__title');
+let weekendTitleSpans = document.querySelectorAll('.weekend__title span');
+let weekendDescs = document.querySelector('.weekend__descs');
+let weekendDesc = document.querySelectorAll('.weekend__desc');
+
+const weekendTitleController = new ScrollMagic.Controller();
+const weekendDescsController = new ScrollMagic.Controller();
+
+const weekendTitleTl = new TimelineMax();
+const weekendDescsTl = new TimelineMax();
+
+weekendTitleTl.staggerFrom(weekendTitleSpans, 1, { y: 100, opacity: 0 }, 0.3);
+weekendDescsTl.from(weekendDesc, 1, { y: 100, opacity: 0 });
+
+const weekendTitleScene = new ScrollMagic.Scene({
+        triggerElement: weekendTitle,
+        triggerHook: 1
+    })
+    .setTween(weekendTitleTl)
+    .addTo(weekendTitleController);
+
+const weekendDescsScene = new ScrollMagic.Scene({
+        triggerElement: weekendDescs,
+        triggerHook: 1
+    })
+    .setTween(weekendDescsTl)
+    .addTo(weekendDescsController);
+
+
+
+// jQ
 
 jQuery(function() {
 

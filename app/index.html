@@ -106,13 +106,13 @@
         <section class="section hero" style="background: url('../img/static/hero.jpg') no-repeat;">
             <div class="wrapper hero__wrapper">
                 <div class="hero__camp">
-                    <a href="#" class="hero__btn">Лагерь</a>
+                    <a href="#" class="btn hero__btn">Лагерь</a>
                 </div>
                 <div class="hero__premium">
-                    <a href="#" class="hero__btn">Premium</a>
+                    <a href="#" class="btn hero__btn">Premium</a>
                 </div>
                 <div class="hero__vip">
-                    <a href="#" class="hero__btn">VIP</a>
+                    <a href="#" class="btn hero__btn">VIP</a>
                 </div>
             </div>
         </section>
@@ -120,7 +120,9 @@
         <section class="section weekend">
             <div class="wrapper weekend__wrapper">
                 <h1 class="weekend__title">
-                    Проведя свой уик-энд на природе, вы зарядите себя отличным настроением на долгое время!
+                    <span>Проведя свой уик-энд на природе,</span>
+                    <span>вы зарядите себя отличным</span>
+                    <span>настроением на долгое время!</span>
                 </h1>
                 <div class="weekend__descs">
                     <div class="weekend__desc">
@@ -219,7 +221,7 @@
             </div>
         </section>
 
-        <section class="section info">
+        <section class="section infos">
             <div class="wrapper info__wrapper">
                 <a class="info__item info_price" href="#" style="background: url('../img/static/info-1.jpg') no-repeat;">
                     <h2 class="info__title primary">Просмотреть цены</h2>
@@ -230,9 +232,121 @@
             </div>
         </section>
 
+        <section class="section services">
+            <div class="wrapper">
+                <div class="lazy service service_camp" data-bg="img/static/service_camp.jpg">
+                    <div class="service__info">
+                        <span class="service__title">Лагерь</span>
+                        <span class="service__desc">
+                            Лагерь расположено в 50 км от Ташкента в одном из уникальных мест Узбекистана,
+                            возле горных хребтов Тянь-Шаня, в поселке под названием Номданак. 
+                            Это отличное место для проведения корпоративного отдыха, 
+                            также для любителей туристических экскурсий по природе.
+                        </span>
+                        <a href="#" class="btn service__btn">Подробно</a>
+                    </div>
+                </div>
+                <div class="lazy service service_premium" data-bg="img/static/service_premium.jpg">
+                    <div class="service__info">
+                        <span class="service__title">Премиум</span>
+                        <span class="service__desc">
+                            Лагерь расположено в 50 км от Ташкента в одном из уникальных мест Узбекистана,
+                            возле горных хребтов Тянь-Шаня, в поселке под названием Номданак. 
+                            Это отличное место для проведения корпоративного отдыха, 
+                            также для любителей туристических экскурсий по природе.
+                        </span>
+                        <a href="#" class="btn service__btn">Подробно</a>
+                    </div>
+                </div>
+                <div class="lazy service service_vip" data-bg="img/static/service_vip.jpg">
+                    <div class="service__info">
+                        <span class="service__title">VIP</span>
+                        <span class="service__desc">
+                            Лагерь расположено в 50 км от Ташкента в одном из уникальных мест Узбекистана,
+                            возле горных хребтов Тянь-Шаня, в поселке под названием Номданак. 
+                            Это отличное место для проведения корпоративного отдыха, 
+                            также для любителей туристических экскурсий по природе.
+                        </span>
+                        <a href="#" class="btn service__btn">Подробно</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section infos">
+            <div class="wrapper info__wrapper">
+                <a class="info__item info_price" href="#" style="background: url('../img/static/info-1.jpg') no-repeat;">
+                    <h2 class="info__title primary">Просмотреть цены</h2>
+                </a>
+                <a class="info__item info_reserv" href="#" style="background: url('../img/static/info-2.jpg') no-repeat;">
+                    <h2 class="info__title secondary">Забронировать</h2>
+                </a>
+            </div>
+        </section>
+
+        <section class="section contacts">
+            <div class="wrapper contact__wrapper">
+                <h3 class="contact__title">Есть вопросы? Позвоните нам:</h3>
+                <div class="contact__phones">
+                    <a class="contact__phone" href="tel:+998935050870">(93) 505-08-70</a>
+                    <a class="contact__phone" href="tel:+998935057828">(93) 505-78-28</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <script src=" js/bundle.min.js "></script>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__item">
+                <h3 class="footer__title">Страницы</h3>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Галлерея</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Бронирование</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Правила</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Сервисы</h3>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#">Лагерь</a></li>
+                        <li><a href="#">Premium</a></li>
+                        <li><a href="#">VIP</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Адрес</h3>
+                <nav class="footer__nav">
+                    <ul>
+                        <li>Ташкентская область, <br> поселок Номданак.</li>
+                        <li><a class="view-map" href="#">Просмотреть на карте</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Контакты</h3>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="tel:+998935050870">(93) 505-08-70</a></li>
+                        <li><a href="tel:+998935057828">(93) 505-78-28</a></li>
+                        <li><a href="mailto:info@rvillage.uz">info@rvillage.uz</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__pic">
+            <img class="lazy" data-src="img/static/footer.png" alt="">
+        </div>
+    </footer>
+
+    <script src="js/jQ.js"></script>
+    <script src="js/bundle.min.js "></script>
     <script src="js/main.js "></script>
 </body>
 

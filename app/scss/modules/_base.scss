@@ -1,6 +1,10 @@
 *,
 *::after,
 *::before {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    color: $text;
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
@@ -15,12 +19,7 @@
 html,
 body {
     position: relative;
-    font-family: 'Nunito';
-    font-weight: 400;
-    font-size: 20px;
-    color: $text;
     overflow-x: hidden;
-    height: 10000px;
 }
 
 body::-webkit-scrollbar {
@@ -63,10 +62,31 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h1 span {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 78px;
+    background: linear-gradient(270deg, #1e82bd 26%, #10527b 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 h2 {
     font-family: "Alice";
     font-weight: 400;
     font-size: 40px;
+}
+
+h3 {
+    font-family: "Alice";
+    font-weight: 400;
+    font-size: 25px;
+    background: linear-gradient(270deg, #1e82bd 26%, #10527b 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 input {

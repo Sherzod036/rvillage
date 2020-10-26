@@ -34,9 +34,10 @@ $white: #fff;
 
 .weekend {
     &__title {
-        max-width: 870px;
-        width: 100%;
         margin-bottom: 140px;
+        & span {
+            display: block;
+        }
     }
     &__descs {
         display: flex;
@@ -132,6 +133,10 @@ $white: #fff;
     }
 }
 
+.infos {
+    width: 100%;
+}
+
 .info {
     &__wrapper {
         display: flex;
@@ -147,7 +152,6 @@ $white: #fff;
         align-items: center;
         background-position: center !important;
         background-size: cover !important;
-        box-shadow: 0px 0px 20px rgba(8, 35, 48, 0.24);
         border-radius: 10px;
         overflow: hidden;
     }
@@ -171,6 +175,99 @@ $white: #fff;
     }
     &__title {
         position: relative;
+    }
+}
+
+.services {
+    width: 100%;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 768px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    padding: 0 70px;
+    margin-bottom: 100px;
+    &:first-child {
+        justify-content: flex-end;
+    }
+    &:nth-child(2) {
+        justify-content: flex-start;
+    }
+    &:last-child {
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+    &__info {
+        width: 568px;
+        background: rgba(16, 82, 123, 0.8);
+        border: 5px solid $secondary;
+        border-radius: 10px;
+        padding: 60px;
+    }
+    &__title {
+        position: relative;
+        font-family: "Alice";
+        font-weight: 400;
+        font-size: 50px;
+        color: $white;
+        display: block;
+        margin-bottom: 25px;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 228px;
+            height: 3px;
+            background: $secondary;
+            margin-top: 8px;
+        }
+    }
+    &__desc {
+        font-size: 20px;
+        line-height: 150%;
+        color: $white;
+        display: block;
+        margin-bottom: 25px;
+    }
+}
+
+.contacts {
+    width: 100%;
+}
+
+.contact {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__phones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__phone {
+        display: block;
+        padding: 10px 0;
+        color: $primary;
+        font-weight: 600;
+        font-size: 29px;
+        border-top: 3px solid $secondary;
+        border-bottom: 3px solid $secondary;
+        &:first-child {
+            border-right: 3px solid $secondary;
+            padding-right: 10px;
+            padding-left: 5px;
+        }
+        &:last-child {
+            padding-left: 10px;
+            padding-right: 5px;
+        }
     }
 }
 

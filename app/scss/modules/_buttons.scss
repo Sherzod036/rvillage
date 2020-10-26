@@ -1,4 +1,4 @@
-.hero__btn {
+.btn {
     font-family: 'Roboto';
     font-weight: 500;
     color: $primary;
@@ -8,4 +8,9 @@
     border-radius: 22px;
     border: 2px solid $secondary;
     font-size: 22px;
+    transition: .3s;
+    &:hover {
+        color: $secondary;
+        background: $primary;
+    }
 }
