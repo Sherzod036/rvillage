@@ -31,7 +31,7 @@ gulp.task('bundlecss', function() {
 
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/slick-carousel/slick/slick.css'
+        'node_modules/flickity/dist/flickity.css'
     ])
 
     .pipe(concat('bundle.min.css'))
@@ -51,7 +51,7 @@ gulp.task('bundlejs', function() {
         'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
         'node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
         'node_modules/vanilla-lazyload/dist/lazyload.js',
-        'node_modules/slick-carousel/slick/slick.js'
+        'node_modules/flickity/dist/flickity.pkgd.js'
     ])
 
     .pipe(concat('bundle.min.js'))

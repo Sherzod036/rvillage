@@ -54,8 +54,8 @@ const weekendDescsController = new ScrollMagic.Controller();
 const weekendTitleTl = new TimelineMax();
 const weekendDescsTl = new TimelineMax();
 
-weekendTitleTl.staggerFrom(weekendTitleSpans, 1, { y: 100, opacity: 0 }, 0.3);
-weekendDescsTl.from(weekendDesc, 1, { y: 100, opacity: 0 });
+weekendTitleTl.staggerFrom(weekendTitleSpans, 1, { y: 50, opacity: 0 }, 0.3);
+weekendDescsTl.from(weekendDesc, 1, { y: 50, opacity: 0 });
 
 const weekendTitleScene = new ScrollMagic.Scene({
         triggerElement: weekendTitle,
@@ -71,26 +71,14 @@ const weekendDescsScene = new ScrollMagic.Scene({
     .setTween(weekendDescsTl)
     .addTo(weekendDescsController);
 
+// Flickity
 
+let flktySlides = document.querySelector('.comfort__slides');
 
-// jQ
-
-jQuery(function() {
-
-    let comfortSlides = $('.comfort__slides');
-
-    comfortSlides.slick({
-        centerMode: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        cssEase: 'linear',
-        draggable: false,
-        autoplay: true,
-        speed: 10000,
-        dots: false,
-        arrows: false,
-        pauseOnHover: false
-    });
-
+const flkty = new Flickity(flktySlides, {
+    autoPlay: true,
+    draggable: false,
+    contain: true,
+    prevNextButtons: false,
+    pageDots: false
 });
