@@ -1,10 +1,19 @@
 .footer {
     width: 100%;
+    position: relative;
     &__wrapper {
         display: flex;
     }
     &__item {
         width: 25%;
+    }
+    &__title {
+        font-family: "Alice";
+        font-weight: 400;
+        font-size: 25px;
+        color: #348300;
+        text-align: center;
+        margin-bottom: 20px;
     }
     &__nav {
         & ul {
@@ -25,6 +34,13 @@
 }
 
 .view-map {
-    color: $primary;
+    color: #348300;
     text-decoration: underline;
+}
+
+.logo_dev {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
 }

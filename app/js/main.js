@@ -8,6 +8,34 @@ document.addEventListener('mousemove', function(e) {
 
 const lazy = new LazyLoad();
 
+let heroBtn = document.querySelectorAll('.hero__btn');
+let heroPic = document.querySelectorAll('.hero__pic');
+let heroSmoke = document.querySelectorAll('.hero__smoke');
+
+heroBtn[0].addEventListener('mouseenter', () => {
+    heroPic[0].style.width = '100%';
+    heroPic[0].style.height = '100%';
+    heroSmoke[0].style.opacity = '1';
+});
+
+heroBtn[0].addEventListener('mouseleave', () => {
+    heroPic[0].style.width = '80%';
+    heroPic[0].style.height = '80%';
+    heroSmoke[0].style.opacity = '0';
+});
+
+heroBtn[1].addEventListener('mouseenter', () => {
+    heroPic[1].style.width = '100%';
+    heroPic[1].style.height = '100%';
+    heroSmoke[1].style.opacity = '1';
+});
+
+heroBtn[1].addEventListener('mouseleave', () => {
+    heroPic[1].style.width = '80%';
+    heroPic[1].style.height = '80%';
+    heroSmoke[1].style.opacity = '0';
+});
+
 // GSAP
 
 let menu = document.querySelector('.menu');
@@ -32,11 +60,11 @@ menuTl.reverse();
 let burger = document.querySelector('.burger');
 let navsClose = document.querySelector('.navs__close-ico');
 
-burger.addEventListener('click', function() {
+burger.addEventListener('click', () => {
     menuTl.reversed(!menuTl.reversed());
 });
 
-navsClose.addEventListener('click', function() {
+navsClose.addEventListener('click', () => {
     menuTl.reversed(!menuTl.reversed());
 });
 
@@ -44,7 +72,7 @@ navsClose.addEventListener('click', function() {
 // ScrollMagic
 
 let weekendTitle = document.querySelector('.weekend__title');
-let weekendTitleSpans = document.querySelectorAll('.weekend__title span');
+let weekendTitleDiv = document.querySelectorAll('.weekend__title div');
 let weekendDescs = document.querySelector('.weekend__descs');
 let weekendDesc = document.querySelectorAll('.weekend__desc');
 
@@ -54,7 +82,7 @@ const weekendDescsController = new ScrollMagic.Controller();
 const weekendTitleTl = new TimelineMax();
 const weekendDescsTl = new TimelineMax();
 
-weekendTitleTl.staggerFrom(weekendTitleSpans, 1, { y: 50, opacity: 0 }, 0.3);
+weekendTitleTl.staggerFrom(weekendTitleDiv, 1, { y: 50, opacity: 0 }, 0.3);
 weekendDescsTl.from(weekendDesc, 1, { y: 50, opacity: 0 });
 
 const weekendTitleScene = new ScrollMagic.Scene({
@@ -70,15 +98,3 @@ const weekendDescsScene = new ScrollMagic.Scene({
     })
     .setTween(weekendDescsTl)
     .addTo(weekendDescsController);
-
-// Flickity
-
-let flktySlides = document.querySelector('.comfort__slides');
-
-const flkty = new Flickity(flktySlides, {
-    autoPlay: true,
-    draggable: false,
-    contain: true,
-    prevNextButtons: false,
-    pageDots: false
-});

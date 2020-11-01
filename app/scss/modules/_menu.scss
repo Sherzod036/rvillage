@@ -18,7 +18,7 @@
         right: 0;
         bottom: 0;
         z-index: 2;
-        background: linear-gradient(0deg, rgba(30, 130, 189, 0.6), rgba(30, 130, 189, 0.6));
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
     }
     &__contact {
         position: relative;
@@ -33,14 +33,14 @@
         &-title {
             font-family: "Alice";
             font-weight: 400;
-            color: $white;
+            color: $text;
             display: block;
             margin-bottom: 10px;
         }
         &-link {
             display: block;
             font-size: 16px;
-            color: $white;
+            color: $text;
             line-height: 150%;
         }
     }
@@ -49,9 +49,9 @@
         bottom: 15%;
         &-title {
             display: block;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 16px;
-            color: $white;
+            color: $text;
             margin-bottom: 25px;
         }
         &-icos {
@@ -66,8 +66,14 @@
             height: 42px;
             border-radius: 50%;
             transition: .3s;
+            & svg path {
+                fill: $text;
+            }
             &:hover {
-                background: $secondary;
+                background: $primary;
+                & svg path {
+                    fill: $white;
+                }
             }
         }
         &-ico:not(:last-child) {
@@ -82,9 +88,16 @@
     top: 0;
     right: 0;
     z-index: 3;
-    background: linear-gradient(90deg, #1e82bd 0%, #10527b 100%);
+    background: linear-gradient(270deg, #71A84D 0%, #348300 100%);
     padding: 0 50px;
     padding-top: 120px;
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     &__close-ico {
         position: absolute;
         top: 5%;
@@ -103,13 +116,25 @@
                 margin-bottom: 25px;
             }
             & a {
+                position: relative;
                 font-family: "Alice";
                 font-weight: 400;
                 font-size: 29px;
                 color: $white;
                 transition: .3s;
-                &:hover {
-                    color: $secondary;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                    width: 0%;
+                    height: 2px;
+                    background: $white;
+                    margin-top: 3px;
+                    transition: .3s;
+                }
+                &:hover::after {
+                    width: 100%;
                 }
             }
         }
