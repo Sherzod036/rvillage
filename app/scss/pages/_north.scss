@@ -1,0 +1,38 @@
+.page-field {
+    &__title {
+        margin-bottom: 35px;
+    }
+    &__desc {
+        width: 750px;
+        font-family: "Alice";
+        font-size: 34px;
+        margin-bottom: 35px;
+        line-height: 152%;
+        &-bot {
+            font-size: 16px;
+            line-height: 190%;
+            margin-bottom: 35px;
+        }
+    }
+    &__subdescs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__subdesc {
+        width: 45%;
+        font-size: 16px;
+        line-height: 190%;
+    }
+    &__gallery {
+        margin-bottom: 35px;
+    }
+    &__roomy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+            width: 45%;
+        }
+    }
+}

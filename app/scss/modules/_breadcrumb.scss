@@ -1,0 +1,19 @@
+.breadcrumb {
+    padding: 25px 0;
+    &__items {
+        display: flex;
+        align-items: center;
+        & li {
+            &:last-child a {
+                color: #8c979d;
+            }
+            & a {
+                font-size: 14px;
+            }
+        }
+    }
+    &__divider {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+}

@@ -167,8 +167,8 @@
             position: relative;
             display: flex !important;
             align-items: center;
-            width: 360px;
-            height: 200px;
+            width: 360px !important;
+            height: 200px !important;
             background-size: cover !important;
             border-radius: 10px;
             padding: 0 20px;
@@ -348,4 +348,10 @@
     }
     
     @import 'modules/footer';
+    @import 'modules/breadcrumb';
+    @import 'pages/contact';
+    @import 'pages/rules';
+    @import 'pages/pricing';
+    @import 'pages/gallery';
+    @import 'pages/north';
     @import 'modules/media';

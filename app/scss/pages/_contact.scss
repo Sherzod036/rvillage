@@ -1,0 +1,30 @@
+.page-contact {
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info {
+        width: 40%;
+        &-title {
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+        &-inner {
+            margin-bottom: 35px;
+        }
+    }
+    &__loc {
+        line-height: 123%;
+    }
+    &__map {
+        width: 55%;
+        height: 428px;
+        border: 2px solid #348300;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}

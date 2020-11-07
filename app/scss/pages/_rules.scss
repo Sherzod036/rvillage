@@ -1,0 +1,40 @@
+.page-rules {
+    position: relative;
+    &__title {
+        margin-bottom: 35px;
+    }
+    &__pic {
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+    &__list {
+        &-item {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.page__inner-title {
+    max-width: 30%;
+    position: relative;
+    padding: 10px 0;
+    padding-right: 25px;
+    display: inline-block;
+    background: #348201;
+    color: $white;
+    border-radius: 0px 20px 20px 0px;
+    margin-bottom: 36px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        width: 99999px;
+        background: #348201;
+    }
+}

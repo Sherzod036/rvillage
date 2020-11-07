@@ -86,9 +86,8 @@ h2 {
 h3 {
     font-family: "Alice";
     font-weight: 400;
-    font-size: 25px;
+    font-size: 29px;
     color: $text;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -109,4 +108,34 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.owl-prev {
+    margin-right: 25px;
+}
+
+.gallery-left-btn,
+.gallery-right-btn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #8C979D;
+}
+
+.arrow_left {
+    margin-right: 10px;
+}
+
+.arrow_right {
+    margin-left: 10px;
+}
+
+.color-primary {
+    color: #368707 !important;
 }

@@ -30,7 +30,8 @@ gulp.task('scss', function() {
 gulp.task('bundlecss', function() {
 
     return gulp.src([
-        'node_modules/normalize.css/normalize.css'
+        'node_modules/normalize.css/normalize.css',
+        'node_modules/owl.carousel/dist/assets/owl.carousel.css'
     ])
 
     .pipe(concat('bundle.min.css'))
@@ -46,11 +47,12 @@ gulp.task('bundlecss', function() {
 gulp.task('bundlejs', function() {
 
     return gulp.src([
+        'node_modules/jquery/dist/jquery.js',
+        'node_modules/owl.carousel/dist/owl.carousel.js',
         'node_modules/gsap/dist/gsap.js',
         'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
         'node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
         'node_modules/vanilla-lazyload/dist/lazyload.js'
-
     ])
 
     .pipe(concat('bundle.min.js'))
