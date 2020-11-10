@@ -24,12 +24,33 @@
     }
 }
 
+.header-mobi__nav {
+    width: 100%;
+    text-align: center;
+    & ul {
+        padding: 15px;
+        & li {
+            margin-bottom: 10px;
+            & a {
+                font-weight: 500;
+                transition: .3s;
+                &:hover {
+                    color: #368707;
+                }
+            }
+        }
+    }
+}
+
 .pages-header {
+    position: relative;
+    z-index: 99;
     background: $white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     padding: 5px 0;
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }

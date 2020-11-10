@@ -49,6 +49,60 @@
         }
     }
     
+    .header_mobi {
+        display: none;
+        width: 100%;
+        position: fixed;
+    }
+    
+    .inner-word_mobi {
+        display: none;
+    }
+    
+    .mobi-hero {
+        display: none;
+        &__item {
+            width: 100%;
+            height: 50vh;
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+        &__pic {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-size: cover !important;
+            background-position: center !important;
+        }
+        &__btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            width: 214px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+            border-radius: 5px;
+            font-weight: 500;
+            color: $primary;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            transition: .3s;
+            &:hover {
+                box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+                background: rgba(54, 135, 7, 0.9);
+                color: $white;
+            }
+        }
+    }
+    
     .hero {
         width: 100%;
         height: 100vh;
@@ -174,7 +228,6 @@
             padding: 0 20px;
             overflow: hidden;
             text-align: left;
-            margin: 0 25px;
             cursor: pointer;
             &:hover {
                 & .comfort__slide-pic {

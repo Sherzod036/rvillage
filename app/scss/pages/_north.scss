@@ -31,8 +31,55 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 90px;
         &-item {
             width: 45%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(8, 35, 48, 0.24);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-txt {
+            display: block;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &-subtxt {
+            display: block;
+            font-size: 45px;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    &__title-inner {
+        margin-bottom: 70px;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card {
+        width: 25%;
+        margin-bottom: 50px;
+        &-ico {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 157px;
+            height: 157px;
+            background: #348300;
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.65);
+        }
+        &-desc {
+            text-align: center;
+            line-height: 150%;
+            font-size: 16px;
+            margin-top: 15px;
         }
     }
 }

@@ -1,9 +1,142 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1400px) {
+    .video {
+        height: auto;
+    }
+    .comfort {
+        margin-top: 150px;
+    }
+}
 
-@media (max-width: 992px) {}
+@media (max-width: 1200px) {
+    * {
+        font-size: 16px;
+    }
+    .hero {
+        display: none;
+    }
+    .mobi-hero {
+        display: block;
+    }
+    .header_desktop {
+        display: none;
+    }
+    .header_mobi {
+        display: block;
+    }
+    h1 div {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .inner-word {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .section {
+        margin-bottom: 50px;
+    }
+    .weekend__title {
+        margin-bottom: 50px;
+    }
+    .comfort {
+        margin-top: 50px;
+    }
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 992px) {
+    h2 {
+        font-size: 28px;
+    }
+    .service {
+        height: 500px;
+    }
+    .service:first-child {
+        justify-content: center;
+    }
+    .service:last-child {
+        justify-content: center;
+    }
+    .service__title {
+        font-size: 40px;
+    }
+    .service__desc {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 18px;
+    }
+}
 
-@media (max-width: 576px) {}
+@media (max-width: 768px) {
+    .pages-header__btn {
+        font-size: 16px;
+    }
+    .pages-header__btn_price {
+        margin-right: 10px;
+    }
+    .subscribe {
+        padding: 12px 6px;
+    }
+    .weekend__descs {
+        flex-wrap: wrap;
+    }
+    .weekend__desc {
+        width: 100%;
+        line-height: 35px;
+        &:first-child {
+            margin-bottom: 25px;
+        }
+    }
+    .info__wrapper {
+        flex-wrap: wrap;
+    }
+    .info__item {
+        width: 100%;
+        &:first-child {
+            margin-bottom: 25px;
+        }
+    }
+    .service {
+        margin-bottom: 50px;
+        padding: 30px;
+        height: auto;
+    }
+    .service__title {
+        font-size: 30px;
+    }
+    .service__title::after {
+        height: 2px;
+    }
+    .service__info {
+        padding: 30px;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+    .footer__item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pages-header__btns {
+        display: none;
+    }
+    h1 div {
+        font-size: 30px;
+    }
+    .inner-word_desktop {
+        display: none;
+    }
+    .inner-word_mobi {
+        display: block;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .contact__phone {
+        font-size: 22px;
+    }
+}
 
 @media (max-width: 501px) {}

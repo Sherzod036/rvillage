@@ -58,15 +58,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuTl.reverse();
 
-    let burger = document.querySelector('.burger');
+    let burger = document.querySelectorAll('.burger');
+    console.log(burger);
     let navsClose = document.querySelector('.navs__close-ico');
 
-    burger.addEventListener('click', () => {
+    burger[1].addEventListener('click', () => {
         menuTl.reversed(!menuTl.reversed());
     });
 
     navsClose.addEventListener('click', () => {
         menuTl.reversed(!menuTl.reversed());
+    });
+
+    let burgerTl = new TimelineMax();
+
+    let mobiHeaderNav = document.querySelector('.header-mobi__nav');
+    let mobiHeaderNavItem = document.querySelectorAll('.header-mobi__nav ul li');
+
+    burgerTl
+        .fromTo(mobiHeaderNav, 0.3, { height: 0, opacity: 0 }, { height: '226px', opacity: 1 })
+        .staggerFrom(mobiHeaderNavItem, 0.4, { y: 50, opacity: 0 }, 0.2);
+
+    burgerTl.reverse();
+
+    let pagesHeaderBurger = document.querySelector('.pages-header__burger');
+
+    pagesHeaderBurger.addEventListener('click', () => {
+        burgerTl.reversed(!burgerTl.reversed());
     });
 
 
@@ -100,13 +118,90 @@ document.addEventListener('DOMContentLoaded', () => {
         .setTween(weekendDescsTl)
         .addTo(weekendDescsController);
 
-
-    let galleryLeftBtn = document.querySelector('.gallery-left-btn');
-    let galleryRightBtn = document.querySelector('.gallery-right-btn');
-
 });
 
+// jQ
+
 jQuery(function() {
+
+    let sliderTop = $('.slider_top');
+
+    sliderTop.owlCarousel({
+        items: 4,
+        loop: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        rtl: false,
+        autoplaySpeed: 30000,
+        margin: 10,
+        mouseDrag: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
+
+    let sliderMid = $('.slider_mid');
+
+    sliderMid.owlCarousel({
+        items: 4,
+        loop: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        center: true,
+        slideTransition: 'linear',
+        rtl: false,
+        autoplaySpeed: 40000,
+        margin: 10,
+        mouseDrag: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
+
+    let sliderBot = $('.slider_bot');
+
+    sliderBot.owlCarousel({
+        items: 4,
+        loop: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        rtl: false,
+        autoplaySpeed: 10000,
+        margin: 10,
+        mouseDrag: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1200: {
+                items: 4
+            }
+        }
+    });
 
     let gallery = $('.gallery');
 
@@ -115,7 +210,6 @@ jQuery(function() {
         loop: true,
         margin: 100,
         smartSpeed: 1500,
-        center: true,
         dots: false,
         nav: true,
         navText: ['<div class="gallery-left-btn"><span class="arrow arrow_left"><img src="img/ico/arrow_left.svg" alt=""></span>предыдущий</div>', '<div class="gallery-right-btn">следующий<span class="arrow arrow_right"><img src="img/ico/arrow_right.svg" alt=""></span></div>'],
